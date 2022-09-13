@@ -15,11 +15,11 @@ int main(void)
 	{
 		for (b = 10; b <= 19; b++)
 		{
-			if ((a % 10) > (b % 10))
+			if ((b % 10) > (a % 10))
 			{
 				putchar((a % 10) + '0');
 				putchar((b % 10) + '0');
-				if (b != 18 || a != 19)
+				if (a != 18 || b != 19)
 				{
 					putchar(',');
 					putchar(' ');
