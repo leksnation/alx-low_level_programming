@@ -13,7 +13,7 @@ int main(void)
 	unsigned long n1_h1, n1_h2, n2_h1, n2_h2;
 	unsigned long h1, h2;
 
-	for (inc = 0; inc < 98; inc++)
+	for (inc = 0; inc < 92; inc++)
 	{
 		n3 = n1 + n2;
 		printf("%lu, ", n3);
