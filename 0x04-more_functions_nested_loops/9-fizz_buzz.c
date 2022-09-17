@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - program that prints either number
@@ -8,33 +8,31 @@
  */
 int main(void)
 {
-	int num;
+	int i = 1;
 
-	while (num++ < 100)
+	while (i <= 100)
 	{
-		if ((num % 3 == 0) && (num % 5 == 0))
+		if ((i % 3 == 0) && (i % 5 == 0))
 		{
 			printf("FizzBuzz ");
 		}
-		else if ((num % 3) == 0)
+		else if ((i % 3) == 0)
 		{
 			printf("FiZZ ");
 		}
-		else if ((num % 5) == 0)
+		else if ((i % 5) == 0)
 		{
-			if (num != 100)
-			{
-				printf("Buzz ");
-			}
-			else
-			{
-				printf("Buzz ");
-			}
+			printf("Buzz ");
 		}
 		else
 		{
-			printf("%d ", num);
+			printf("%d", i);
 		}
+		if (i != 100)
+		{
+			putchar(' ');
+		}
+		i++;
 	}
 	printf("\n");
 
